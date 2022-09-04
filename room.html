@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wi
+    dth=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Главная</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+           <a href="./index.html">Logo</a> 
+        </div>
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <main>
+        <h1>Комната 1</h1>
+        <div class="btns">
+            <a href="#" class="btn">
+                <p>Устройство 1</p>
+            </a>
+            <a href="#" class="btn">
+                <p>Устройство 2</p>
+            </a>
+            <a href="#" class="btn">
+                <p>Датчик 1</p>
+            </a>
+            <a href="#" class="btn">
+                <p>Датчик 2</p>
+            </a>
+        </div>
+    </main>
+    
+    <div class="footer">
+        <a href="#" class="logo">
+            Logo
+        </a>
+        <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./login.html">Авторизация</a></li>
+            <li><a href="./devices.html">Устройства и датчики</a></li>
+            <li><a href="./macros.html">Макросы</a></li>
+        </ul>
+    </div>
+    
+    <div class="modal">
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./login.html">Авторизация</a></li>
+            <li><a href="./devices.html">Устройства и датчики</a></li>
+            <li><a href="./macros.html">Макросы</a></li>
+        </ul>
+    </div>
+
+    <script>
+        let menu = document.querySelector('.menu');
+        let modal = document.querySelector('.modal');
+        menu.addEventListener('click', () => {
+            modal.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
